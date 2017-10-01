@@ -1,0 +1,229 @@
+﻿
+/*页面切换*/
+.pt-page-moveToTop{
+    -webkit-animation: moveToLeft .6s ease both;
+	-moz-animation: moveToLeft .6s ease both;
+	animation: moveToTop 0.6s ease;
+}
+.pt-page-moveFromBottom {
+	-webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveFromBottom 0.6s ease;
+}
+.pt-page-moveFromTop{
+    -webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveFromTop 0.6s ease;
+}
+.pt-page-moveToBottom{
+    -webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveToBottom 0.6s ease;
+}
+/*前置板颜色变化*/
+.content-colorBlue{
+    animation:colorBlue 0s cubic-bezier(0,0,0,1); 
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorPurple{
+    animation:colorPurple 0.2s cubic-bezier(0,0,0,1); 
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorBlack{
+    animation:colorBlack 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorDeepGreen{
+    animation:colorDeepGreen 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorDeepCoff{
+    animation:colorDeepCoff 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorGrey{
+    animation:colorGrey 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorCoff{
+    animation:colorCoff 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+.content-colorOrignal{
+    animation:colorOrignal 0s cubic-bezier(0,0,0,1);
+    animation-fill-mode:forwards;
+    animation-delay:0.3s;
+}
+/*前置板内容变化*/
+.contentToUp{
+    animation:contentToUp 0.2s ease-out;
+}
+.contentToUpdelay{
+    animation:contentToUp2 0.2s ease-out;
+    animation-delay:0.1s;
+}
+.contentFromBottom{
+    animation:contentFromBottom 0.2s ease-out; 
+    
+}
+.contentFromBottomdelay{
+    animation:contentFromBottom2 0.2s ease-out;
+    animation-delay:0.1s;
+}
+.contentFromUp{
+    animation:contentFromUp 0.2s ease-out;
+}
+.contentFromUpdelay{
+    animation:contentFromUp2 0.2s ease-out;
+    animation-delay:0.1s;
+}
+.contentToBottom{
+    animation:contentToBottom 0.2s ease-out;
+}
+.contentToBottomdelay{
+    animation:contentToBottom2 0.2s ease-out;
+    animation-delay:0.1s;
+}
+
+/*keyframes*/
+@keyframes moveToTop{
+    to { -webkit-transform: translateY(-100%);}
+}
+@keyframes moveFromBottom{
+    from{-webkit-transform: translateY(100%);}
+}
+@keyframes moveToBottom{
+    to { -webkit-transform: translateY(100%);}
+}
+@keyframes moveFromTop{
+    from { -webkit-transform: translateY(-100%);}
+}
+@keyframes colorBlue{
+    to{
+        background:#285be8;
+    }
+}
+@keyframes colorPurple{
+    to {
+        background:#3c1e48;
+    }
+}
+@keyframes colorBlack{
+    to{
+        background:#000;
+    }
+}
+@keyframes colorDeepGreen{
+    to{
+        background:#141c24;
+    }
+}
+@keyframes colorDeepCoff{
+    to{
+        background:#252525;
+    }
+}
+@keyframes colorGrey{
+    to{
+        background:#4d4d4d;
+    }
+}
+@keyframes colorCoff{
+    to{
+        background:#231f1d;
+    }
+}
+@keyframes colorOrignal{
+    to{
+        background:#5d5f5e;
+    }
+}
+@keyframes contentToUp{
+    from{
+        top:0;
+        opacity:1;
+    }
+    to{
+        top:-10px;
+        opacity:0;
+    }
+}
+@keyframes contentToUp2{
+    from{
+        top:10%;
+        opacity:1;
+    }
+    to{
+        top:9%;
+        opacity:0;
+    }
+}
+@keyframes contentFromBottom{
+    from{
+        top:100px;
+        opacity:0;
+
+    }
+    to{
+        top:0;
+        opacity:1;
+    }
+}
+@keyframes contentFromBottom2{
+    from{
+        top:100px;
+        opacity:0;
+
+    }
+    to{
+        top:10%;
+        opacity:1;
+    }
+}
+@keyframes contentFromUp{
+    from{
+        top:-10px;
+        opacity:0;
+    }
+    to{
+        top:0;
+        opacity:1;
+    }
+}
+@keyframes contentFromUp2{
+    from{
+        top:0px;
+        opacity:0;
+    }
+    to{
+        top:10%;
+        opacity:1;
+    }
+}
+@keyframes contentToBottom{
+    from{
+        top:0;
+        opacity:1;
+    }
+    to{
+        top:10px;
+        opacity:0;
+    }
+}
+@keyframes contentToBottom2{
+    from{
+        top:10%;
+        opacity:1;
+    }
+    to{
+        top:11%;
+        opacity:0;
+    }
+}

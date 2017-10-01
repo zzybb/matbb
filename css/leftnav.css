@@ -1,0 +1,30 @@
+﻿/*aaa*/
+body .leftnav{
+    position:fixed;
+    z-index:9999;
+    width:50px;
+    height:50px;
+    background-color:white;
+    border-radius:50%;
+    text-indent:-9999px;
+    left:3%;
+    top:7%;
+}
+body .leftnav hr{
+    position:relative;
+    width:40%;
+    left:15px;
+    top:-7px;
+    margin-top:5px;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    transition:transform 0.5s;
+}
+/*点击改变按钮样式的CLASS类*/
+.hrrotate{
+    transform:rotate(180deg);
+}
+.reset{
+    transform:rotate(360deg);
+}
