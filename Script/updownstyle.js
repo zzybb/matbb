@@ -9,7 +9,6 @@ function updownstyle() {
         span1 = $("span.suggest"),
         spanInline = $("span.inline"),
         spana = $("span .suggest b");
-        isAnimating = false;
     a1.mouseover(function () {
         h1.addClass("rotateup1");
         h2.addClass("rotateup2");

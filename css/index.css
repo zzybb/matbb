@@ -127,23 +127,24 @@ span.content p:first-child{
     color:#99999b;
 }
 .suggest{
-    display:block;
+    visibility:visible;
     position:absolute;
     width:50%;
     height:100%;
     left:55%;
     cursor:pointer;
     top:0px;
-    /*opacity:0;*/
 }
 .up{
     position:relative;
     top:0px;
+    visibility:hidden;
     opacity:0;
 }
 .bottom{
     position:relative;
     top:10%;
+    visibility:hidden;
     opacity:0;
 }
 span.suggest img{
@@ -153,8 +154,8 @@ span.suggest img{
     width:90%;
 }
 .suggestcurrent{
+    visibility:visible;
     opacity:1;
-    z-index:5;
 }
 
 /*了解详情按钮*/
@@ -300,7 +301,7 @@ span.suggest8 img{
     width:80%;
 }
 img.lastt{
-    top:55%;
+    top:60%;
 }
 img.firstt{
     top:9%;
