@@ -159,7 +159,7 @@
 }
 @keyframes contentToUp2{
     from{
-        top:10%;
+        top:15%;
         opacity:1;
         visibility:visible;
     }
@@ -189,7 +189,7 @@
 
     }
     to{
-        top:10%;
+        top:15%;
         opacity:1;
         visibility:visible;
     }
@@ -213,7 +213,7 @@
         opacity:0;
     }
     to{
-        top:10%;
+        top:15%;
         opacity:1;
         visibility:visible;
     }

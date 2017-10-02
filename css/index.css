@@ -2,6 +2,8 @@
 *{
     padding:0;
     margin:0;
+    font-weight:normal;
+    
 }
 body{
     font-size:16px;
@@ -145,7 +147,7 @@ span.content p:first-child{
 .bottom{
     margin-left:10%;
     position:relative;
-    top:10%;
+    top:15%;
     visibility:hidden;
     opacity:0;
 }
@@ -208,6 +210,13 @@ span.suggest ul{
     position:absolute;
     top:30%;
 }
+span.suggest h1{
+    font-weight:600;
+}
+span.suggest li{
+    font-weight:600;
+}
+
 /*CONTENT 1*/
 span.suggest1 h1{
     margin-top:40px;
@@ -417,6 +426,11 @@ div.nav ul a:hover{
     width:65%;
 }
 }
+@media screen and (min-width:820px) and (max-width:1196px){
+    span.suggest ul{
+    font-size:0.8em;
+}
+}
 
 @media screen and (max-width: 810px){
 span.rules{
@@ -445,17 +459,18 @@ span.content{
     height:90%;
 }
 a.up1{
-    top:80%;
+    top:75%;
     left:80%;
 }
 a.down{
-    top:82%;
+    top:77%;
     left:80%;
 }
 .up{
     margin-left:0%;
 }
 .bottom{
+    top:15%;
     margin-left:0%;
 }
 /*span.suggest ul{
